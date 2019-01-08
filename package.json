@@ -1,6 +1,6 @@
 {
   "name": "react-custom-toast",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.umd.js",
   "types": "lib/index.d.ts",
   "author": "zhzxang",
@@ -16,6 +16,10 @@
     "message",
     "alert"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhzxang/react-custom-toast.git"
+  },
   "scripts": {
     "dev": "webpack-dev-server --mode=development --config build/dev.js --port 3010 --open",
     "build": "npm run clean && npm run build:lib && npm run build:types",

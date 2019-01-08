@@ -17,11 +17,27 @@ const open = (message: string = '', option: ToastOption = defaultOption) => {
   })
 }
 
+const info = (message: string = '', option: ToastOption = defaultOption) => {
+  event.add({
+    ...option,
+    message,
+    type: 'info'
+  })
+}
+
 const error = (message: string = '', option: ToastOption = defaultOption) => {
   event.add({
     ...option,
     message,
     type: 'error'
+  })
+}
+
+const warning = (message: string = '', option: ToastOption = defaultOption) => {
+  event.add({
+    ...option,
+    message,
+    type: 'warning'
   })
 }
 
@@ -39,9 +55,11 @@ const remove = (id: string|number) => {
 
 const toast = Object.assign(open, {
   open,
+  info,
   success,
+  warning,
   error,
-  remove
+  remove,
 })
 
 export default toast

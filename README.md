@@ -1,6 +1,12 @@
 # react-custom-toast
 基于 react 的 toast 组件。可以完全的自定义样式。并提供了内置动画与控制方法
 
+### Feature
+
+* 添加测试
+* 上线 demo 网站
+* 更多的内置动画效果
+
 ### 安装
 
 > 使用 npm 安装
@@ -45,15 +51,17 @@ Toast.open('hello,world')
 
 > 方法
 
-`Toast(msg: string, opt: ToastOption)`          // 打开`默认`
+`Toast(msg: string, opt: ToastOption)`          // 打开`默认`提示
 
-`Toast.open(msg: string, opt: ToastOption)`     // 打开`默认`
+`Toast.open(msg: string, opt: ToastOption)`     // 打开无状态提示
 
-`Toast.info(msg: string, opt: ToastOption)`     // 打开`提示`
+`Toast.info(msg: string, opt: ToastOption)`     // 打开提示
 
-`Toast.error(msg: string, opt: ToastOption)`    // 打开`错误`
+`Toast.info(msg: string, opt: ToastOption)`     // 打开`成功`提示
 
-`Toast.warning(msg: string, opt: ToastOption)`  // 打开`警告`
+`Toast.error(msg: string, opt: ToastOption)`    // 打开`错误`提示
+
+`Toast.warning(msg: string, opt: ToastOption)`  // 打开`警告`提示
 
 `Toast.remove(id: ToastId)`                     // 移除某个toast
 
