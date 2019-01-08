@@ -23,7 +23,7 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.(styl)$/,
+        test: /\.(styl|css)$/,
         use: [
           'style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },

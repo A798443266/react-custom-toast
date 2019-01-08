@@ -1,8 +1,21 @@
 {
-  "name": "react-custom-toast-test",
-  "version": "0.0.2",
+  "name": "react-custom-toast",
+  "version": "0.1.0",
   "main": "lib/index.umd.js",
   "types": "lib/index.d.ts",
+  "author": "zhzxang",
+  "license": "MIT",
+  "description": "基于 react 的 toast 组件。可以完全的自定义样式。并提供了内置动画与控制方法",
+  "keywords": [
+    "react",
+    "notification",
+    "toast",
+    "react-component",
+    "react-custom-toast",
+    "push",
+    "message",
+    "alert"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --mode=development --config build/dev.js --port 3010 --open",
     "build": "npm run clean && npm run build:lib && npm run build:types",
@@ -11,9 +24,6 @@
     "clean": "rm -rf ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "zhzxang",
-  "license": "MIT",
-  "description": "",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
@@ -28,9 +38,11 @@
     "@types/react-transition-group": "^2.0.15",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "highlight.js": "^9.13.1",
     "html-webpack-plugin": "^4.0.0-beta.5",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.5.0",
+    "react-markdown": "^4.0.6",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",

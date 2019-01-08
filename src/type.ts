@@ -14,5 +14,5 @@ export type AnimDirection = {
 }
 
 type Animate = 'slideX' | 'slideY'
-type ToastType = 'info' | 'success' | 'error'
+type ToastType = 'info' | 'success' | 'error' | 'warning'
 export type Placement = 'topLeft' | 'topRight' | 'topCenter' | 'bottomLeft' | 'bottomRight' | 'bottomCenter'
