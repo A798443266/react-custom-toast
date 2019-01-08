@@ -1,0 +1,110 @@
+.toast-container
+  position fixed
+
+  .toast-wrapper
+    position fixed
+
+    &.topRight
+      right 0
+      top 60px
+
+    &.topLeft
+      left 0
+      top 60px
+
+    &.topCenter
+      top 60px
+      left 50%
+      transform translateX(-50%)
+
+    &.bottomLeft
+      left 0
+      bottom 60px
+
+    &.bottomRight
+      right 0
+      bottom 60px
+
+    &.bottomCenter
+      bottom 60px
+      left 50%
+      transform translateX(-50%)
+
+.toast-message
+  box-sizing border-box
+  display flex
+  flex-direction row
+  align-items center
+  justify-content space-between
+  width 232px
+  border-bottom 4px solid #fff
+  background-color #ffffff
+  box-shadow 0 7px 14px rgba(0, 0, 0, .2)
+  margin 16px
+  padding 16px
+  border-radius 4px
+  overflow hidden
+
+  span
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+
+  button
+    outline none
+    background-color #fff
+    border 1px solid #fff
+    padding 4px 8px
+    margin-left 16px
+    border-radius 4px
+    cursor pointer
+
+  &.info
+    border-color #00B4FF
+
+    button
+      // border-color: #00B4FF
+      &:hover
+        border-color #00B4FF
+        color #00B4FF
+        // border-color: #fff
+
+  &.success
+    border-color #59CC00
+
+    button
+      // border-color: #59CC00
+      &:hover
+        border-color #59CC00
+        color #59CC00
+        // border-color: #fff
+
+  &.error
+    border-color #FF1D23
+
+    button
+      // border-color: #FF1D23
+      &:hover
+        border-color #FF1D23
+        color #FF1D23
+        // border-color: #fff
+
+  &.warning
+    border-color #FCCA46
+
+    button
+      // border-color: #FCCA46
+      &:hover
+        border-color #FCCA46
+        color #FCCA46
+        // border-color: #fff
+
+@keyframes extendHeight
+  from
+    transform translateY(-80px)
+
+  to
+    transform translateY(0)
+
+.extend-enter-active
+  animation extendHeight .2s ease 1
