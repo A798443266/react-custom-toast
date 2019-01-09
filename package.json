@@ -1,6 +1,6 @@
 {
   "name": "react-custom-toast",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "main": "lib/index.umd.js",
   "types": "lib/index.d.ts",
   "author": "zhzxang",
@@ -22,6 +22,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --mode=development --config build/dev.js --port 3010 --open",
+    "build:exp": "webpack --mode=production --config build/dev.js",
     "build": "npm run clean && npm run build:lib && npm run build:types",
     "build:lib": "webpack --mode=production --config build/package.umd.js",
     "build:types": "tsc --emitDeclarationOnly",

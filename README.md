@@ -1,11 +1,11 @@
 # react-custom-toast
-基于 react 的 toast 组件。可以完全的自定义样式。并提供了内置动画与控制方法
+基于 react 的 toast 组件。可以完全的自定义样式。并提供了内置动画与控制方法[demo](https://zhzxang.github.io/demo/react-custom-toast)
 
 ### Feature
 
-* 添加测试
-* 上线 demo 网站
-* 更多的内置动画效果
+* [ ] 添加测试
+* [x] 上线 demo 网站
+* [ ] 更多的内置动画效果
 
 ### 安装
 
