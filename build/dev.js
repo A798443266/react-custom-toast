@@ -10,7 +10,7 @@ const reslove = (dir) => path.resolve(root, dir)
 module.exports = {
   entry: reslove('example/index.js'),
   output: {
-    path: reslove('dist'),
+    path: reslove('docs'),
     publicPath: './',
     filename: 'bundle.js'
   },

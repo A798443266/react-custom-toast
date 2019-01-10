@@ -2,7 +2,6 @@
 
 # production
 /lib
-/dist
 
 # debug
 npm-debug.log*
