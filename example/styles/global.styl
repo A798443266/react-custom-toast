@@ -1,0 +1,11 @@
+// flex
+$flex($layout = column, $justify = flex-start, $align = center)
+  display flex
+
+  if ($layout == center)
+    justify-content center
+    align-items center
+  else
+    flex-direction $layout
+    justify-content $justify
+    align-items $align

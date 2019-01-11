@@ -4,14 +4,14 @@ import { ToastOption } from './type'
 const defaultOption: ToastOption = {
   id: '',
   message: '',
-  type: 'info',
+  type: 'default',
   placement: 'topLeft',
   duration: 2000
 }
 
 const open = (message: string = '', option: ToastOption = defaultOption) => {
   event.add({
-    type: 'info',
+    type: 'default',
     ...option,
     message,
   })

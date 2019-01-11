@@ -11,11 +11,14 @@ module.exports = {
   entry: reslove('example/index.js'),
   output: {
     path: reslove('docs'),
-    publicPath: './',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+      styles: reslove('example/styles')
+    }
   },
   module: {
     rules: [
@@ -27,7 +30,12 @@ module.exports = {
         test: /\.(styl|css)$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            }
+          },
           {
             loader: 'postcss-loader',
             options: {
@@ -41,6 +49,10 @@ module.exports = {
           },
           'stylus-loader'
         ]
+      },
+      {
+        test: /\.(svg|png|ttf|woff|eot)$/,
+        use: 'url-loader'
       }
     ]
   },

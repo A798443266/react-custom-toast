@@ -1,4 +1,8 @@
+@import '~styles/index.styl'
+
 body
+  font-size 16px
+  color $text
   margin 0
   padding 0
   font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
@@ -7,3 +11,42 @@ body
 
 code
   font-family source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+
+.iconfont
+  font-size 20px
+  color $icon
+
+h1, h2, h3, h4, h5, h6
+  color $title
+
+p, span, label
+  line-height 20px
+
+a:hover
+  *
+    cursor pointer
+    color $info
+
+input[type=text], input[type=number]
+  outline none
+  width 100%
+  height 36px
+  padding 0 8px
+  border-radius 4px
+  border 1px solid $GB
+  font-size 16px
+  background-color white
+  transition all .2s ease
+
+  &:focus
+    border-color $info
+    box-shadow 0px 2px 5px 0 rgba(0, 0, 0, .15)
+
+input[type=radio]
+  width 32px
+  height 32px
